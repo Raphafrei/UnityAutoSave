@@ -9,6 +9,7 @@ using UnityEditor;
 #endif
 public class AutoSave: MonoBehaviour {
 #if UNITY_EDITOR
+    [System.Obsolete]
     static AutoSave() {
         EditorApplication.playmodeStateChanged = () => {
             if (EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isPlaying) {
